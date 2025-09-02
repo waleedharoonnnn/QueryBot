@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  height: 500px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.chatbot-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  max-width: 70%;
+  align-self: flex-start;
+  color: white;
+  text-align: left;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.chatbot-input-area {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #555;
+}
+
+.chatbot-input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #222;
+  color: white;
+}
+
+.chatbot-input-area input::placeholder {
+  color: #bbb;
+}
+
+.chatbot-input-area button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-input-area button:hover {
+  background-color: #0056b3;
+}
+
+.chatbot-input-area button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

@@ -1,0 +1,5 @@
+Watching for file changes with StatReloader
+C:\Users\waleed\OneDrive\Desktop\drf\chatbot\views.py:19: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  response = chatbot_agent.run(user_query)
+Internal Server Error: /api/v1/chatbot/chat/
+[02/Sep/2025 00:01:08] "POST /api/v1/chatbot/chat/ HTTP/1.1" 500 322
